@@ -22,6 +22,10 @@ int main(int argc, char *argv[]){
 		r = _mul(atof(a), atof(b));
 		printf("%lf",r);
 	}
+	else if (strcmp(argv[1], "car") == 0) {
+    double a = atof(argv[2]);
+    printf("%f\n", _car(a));
+	}
 	else if (strcmp(op, "div") == 0) {
 		r = _div(atof(a), atof(b));
 		printf("%lf",r);
@@ -31,5 +35,3 @@ int main(int argc, char *argv[]){
 	else {printf("Erreur de parametres");}
 	return 0;
 }
-
-		
